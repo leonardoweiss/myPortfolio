@@ -27,12 +27,37 @@ body{
 	align-items: center;
 }
 
+#header a{
+	color: var(--text);
+	text-decoration: none;
+	margin: 0 15px;
+}
+
 #first{
 	height: calc(100vh - 3.65rem);
 	display: flex;
 	justify-content: space-around;
 	text-align: center;
 	align-items: center;
+}
+
+#first a{
+	color: #fff;
+	background-color: var(--text);
+	border-radius: 20px;
+	padding: 4px 10px;
+	text-decoration: none;
+}
+
+#first h1{
+	margin-bottom: 16px;
+	font-size: 2.5rem;
+}
+
+#img1{
+	border: 1px solid var(--boxes);
+	height: 350px;
+	width: 350px;
 }
 
 #about, #projects{
@@ -53,4 +78,10 @@ main section{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+}
+
+#img2{
+	border: 1px solid var(--boxes);
+	height: 250px;
+	width: 250px;
 }
