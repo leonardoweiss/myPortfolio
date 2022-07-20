@@ -14,3 +14,43 @@
 body{
 	font-family: 'Nunito', sans-serif;
 }
+
+#header, #first{
+	background-color: var(--head);
+}
+
+#header{
+	height: 3.65rem;
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid var(--boxes);
+	align-items: center;
+}
+
+#first{
+	height: calc(100vh - 3.65rem);
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;
+}
+
+#about, #projects{
+	background-color: var(--about);
+	border: 1px solid var(--boxes); 
+}
+
+#contact{
+	background-color: var(--contact);
+	border: 1px solid var(--boxes);
+}
+
+main section{
+	height: 100vh;
+}
+
+#about{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
