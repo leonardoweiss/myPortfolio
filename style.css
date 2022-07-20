@@ -3,6 +3,10 @@
 	padding: 0;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 :root{
 --text: #040403;
 --boxes: #5b7553;	
@@ -15,7 +19,7 @@ body{
 	font-family: 'Nunito', sans-serif;
 }
 
-#header, #first{
+#first{
 	background-color: var(--head);
 }
 
@@ -23,8 +27,13 @@ body{
 	height: 3.65rem;
 	display: flex;
 	justify-content: space-around;
-	border: 1px solid var(--boxes);
 	align-items: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgba( 142, 184, 151, 0.3);
+	backdrop-filter: blur( 4px );
+	-webkit-backdrop-filter: blur( 4px );
 }
 
 #header a{
@@ -34,7 +43,7 @@ body{
 }
 
 #first{
-	height: calc(100vh - 3.65rem);
+	height: 100vh;
 	display: flex;
 	justify-content: space-around;
 	text-align: center;
@@ -55,33 +64,26 @@ body{
 }
 
 #img1{
-	border: 1px solid var(--boxes);
 	height: 350px;
 	width: 350px;
 }
 
 #about, #projects{
-	background-color: var(--about);
-	border: 1px solid var(--boxes); 
+	background-color: var(--about); 
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 #contact{
 	background-color: var(--contact);
-	border: 1px solid var(--boxes);
 }
 
 main section{
 	height: 100vh;
 }
 
-#about{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
 #img2{
-	border: 1px solid var(--boxes);
 	height: 250px;
 	width: 250px;
 }
