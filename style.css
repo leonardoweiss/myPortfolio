@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+:root{
+--text: #040403;
+--boxes: #5b7553;	
+--head: #8eb897;	
+--about: #c3e8bd;	
+--contact: #9ddbad;	
+}
+
+body{
+	font-family: 'Nunito', sans-serif;
+}
